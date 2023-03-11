@@ -1,30 +1,30 @@
-class Buttons{
-
-    
-    elements ={
+class Buttons {
 
 
-        clickMe : () => cy.findByText('Click Me'),
-        }
+    elements = {
+
+
+        clickMe: () => cy.findByText('Click Me'),
+    }
 
 
 
-        getClickMe(){
-            console.log('Merge butonul')
-            return cy.findByText('Click Me');
+    getClickMe() {
+        console.log('Merge butonul')
+        return cy.findByText('Click Me');
 
 
-        }
+    }
 
 
-    getMessage (){
+    getMessage() {
         return 'hello';
     }
 
-    clickClickMe(){
+    clickClickMe() {
         this.getClickMe().click();
     }
-    
+
 
 }
-module.exports = new locator();
+module.exports = new Buttons();
