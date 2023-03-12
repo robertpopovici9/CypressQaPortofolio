@@ -1,6 +1,34 @@
+
 class TextBox{
 
+    //visit basedURL
+    visitLink(){
+        cy.visit('https://demoqa.com');
+    }
+
+
+        // visit elements link
+        visitElements(){
+            this.visitLink()
+            cy.get('.category-cards > :nth-child(1) > :nth-child(1)')
+            .click()
+        }
+
+    
+    //go to textbox element
+
+    textBoxLink(){
+        
+        this.visitElements()
+        
+        cy.get(':nth-child(1) > .element-list > .menu-list > #item-0')
+        .click()    
+    }
+
+
+
     //Select elements from TextBox
+    
     selectFullName(){
         return cy.get('#userName');
     }
@@ -24,6 +52,7 @@ class TextBox{
     //Fill text boxes
 
     insertFullname(){
+
 
         this.selectFullName().type('Popovici Robert')
 
@@ -61,6 +90,14 @@ class TextBox{
         .click();
     }
 
+    checkResult(){
+        return
+        cy.get('.name').should('be.visible').and('have.class', 'mb-1')
+        cy.get('.email').should('be.visible').and('have.class', 'mb-1')
+        cy.get('.currentAddress').should('be.visible').and('have.class', 'mb-1')
+        cy.get('.permanentAddress').should('be.visible').and('have.class', 'mb-1')
+
+    }
 
 
 
