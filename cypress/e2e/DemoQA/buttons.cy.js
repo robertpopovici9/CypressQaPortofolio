@@ -1,35 +1,27 @@
-import Buttons from '../../Pages/Buttons';
-
-
-
+import Buttons from '../../Pages/Elements/Buttons';
 
 // it('doubleClickMe', ()=>{
 
-//     cy.visit('https://demoqa.com/buttons');
-
-//     cy.get('#doubleClickBtn').dblclick();
+//     Buttons.visitButtonsLink();
+    
+//     Buttons.clickDoubleClickButton();
 // })
 
 
 
 // it('rightClickMe',()=>{
 
-//     const locators=new locators();
-
-//     cy.visit('https://demoqa.com/buttons');
-
-//     cy.get(locators.clickMe).rightclick();
-
+    
+//     Buttons.visitButtonsLink();
+//     Buttons.clickRighClickButton();
 // })
 
 it('clickMe',()=>{
 
-   cy.visit('https://demoqa.com/buttons');
+   Buttons.visitButtonsLink()
    
 
-    // Portofoliu cypresss
-    Buttons.clickClickMe();
-    
+    Buttons.clickMe();
     
     
 
