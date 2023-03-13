@@ -92,10 +92,10 @@ class TextBox{
 
     checkResult(){
         return
-        cy.get('.name').should('be.visible').and('have.class', 'mb-1')
-        cy.get('.email').should('be.visible').and('have.class', 'mb-1')
-        cy.get('.currentAddress').should('be.visible').and('have.class', 'mb-1')
-        cy.get('.permanentAddress').should('be.visible').and('have.class', 'mb-1')
+        cy.get('.name').should('contains', 'Name:Popovici Robert').and('have.class', 'mb-1')
+        cy.get('.email').should('contains', 'Email:robert.popovici09@yahoo.com').and('have.class', 'mb-1')
+        cy.get('.currentAddress').should('contains',  'Current Address :Iasi').and('have.class', 'mb-1')
+        cy.get('.permanentAddress').should('contains', 'Permananet Address :Vatra-Dornei').and('have.class', 'mb-1')
 
     }
 

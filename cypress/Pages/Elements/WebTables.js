@@ -61,18 +61,26 @@ class WebTables {
         cy.get('#submit').click();
     }
 
-    searchRecord(){
+    searchRecord() {
 
         this.searchBar()
-        .type('vega');
-        
-        
+            .type('vega');
+
     }
 
+    addAndSearchRecord() {
+        this.addRecord()
+        this.searchBar()
+        .type('Popovici');
+        
 
-
-
-
+    }
 }
+
+
+
+
+
+
 
 module.exports = new WebTables();

@@ -19,7 +19,8 @@ class CheckBox {
         this.visitElements()
 
         cy.get(':nth-child(1) > .element-list > .menu-list > #item-1')
-            .click()
+        .click()
+        
     }
 
     //Selecting elements
@@ -69,7 +70,8 @@ class CheckBox {
     collapseToOffice(){
         this.selectHome().click();
         this.selectDocuments().click();
-        this.selectOffice().click();
+        this.selectOffice()
+        .click();
     }
 
     // checkbox function
@@ -77,7 +79,14 @@ class CheckBox {
 
         this.collapseToOffice()
         cy.get('#tree-node-office').check({force: true});
-        cy.get('#result').should('be.visible')
+
+        // verify if selected elements are checked
+        cy.xpath('//*[@id="tree-node-general"] | //*[@id="tree-node-classified"] | //*[@id="tree-node-private"] | //*[@id="tree-node-public"] | //*[@id="tree-node-documents"] | //*[@id="tree-node-home"]').should('be.checked');
+        
+        // check result
+        cy.get('#result').should('be.visible').and('have.class', 'display-result mt-4').and('be.visible');
+        
+        
         
 
     }

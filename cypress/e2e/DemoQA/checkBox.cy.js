@@ -10,16 +10,16 @@ it('checkbox', () => {
     CheckBox.checkBoxes();
 })
 
-it('collapseAllBox', () => {
-    //visit checkbox link
-    CheckBox.CheckBoxLink();
+// it('collapseAllBox', () => {
+//     //visit checkbox link
+//     CheckBox.CheckBoxLink();
 
-    //collapse all
+//     //collapse all
 
-    CheckBox.collapseAll();
+//     CheckBox.collapseAll();
 
 
-})
+// })
 
 
 

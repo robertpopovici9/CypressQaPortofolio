@@ -44,20 +44,20 @@ visitButtonsLink() {
 
         this.getDoubleClick()
         .dblclick();
-        //cy.xpath('//*[@id="doubleClickMessage"]').should('contains','You have done a double click');
+        cy.xpath('//*[@id="doubleClickMessage"]').should('have.text','You have done a double click');
     }
 
     clickRighClickButton(){
         this.getRighClick()
         .rightclick();
-        //cy.xpath('//*[@id="rightClickMessage"]').should('contains', 'You have done a right click');
+        cy.xpath('//*[@id="rightClickMessage"]').should('have.text', 'You have done a right click');
     }
 
     clickMe(){
 
         this.getClickMe()
         .click();
-        //cy.xpath('//*[@id="dynamicClickMessage"]').should('contains', 'You have done a dynamic click');
+        cy.xpath('//*[@id="dynamicClickMessage"]').should('have.text', 'You have done a dynamic click');
     }
 
 

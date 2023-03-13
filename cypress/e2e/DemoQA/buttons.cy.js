@@ -1,20 +1,20 @@
 import Buttons from '../../Pages/Elements/Buttons';
 
-// it('doubleClickMe', ()=>{
+it('doubleClickMe', ()=>{
 
-//     Buttons.visitButtonsLink();
+    Buttons.visitButtonsLink();
     
-//     Buttons.clickDoubleClickButton();
-// })
+    Buttons.clickDoubleClickButton();
+})
 
 
 
-// it('rightClickMe',()=>{
+it('rightClickMe',()=>{
 
     
-//     Buttons.visitButtonsLink();
-//     Buttons.clickRighClickButton();
-// })
+    Buttons.visitButtonsLink();
+    Buttons.clickRighClickButton();
+})
 
 it('clickMe',()=>{
 
