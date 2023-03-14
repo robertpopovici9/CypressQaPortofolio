@@ -2,6 +2,7 @@
 const { defineConfig } = require('cypress')
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
 
+
 module.exports = {
   
     
@@ -24,4 +25,9 @@ module.exports = {
       //implement node event listeners here
     },
   },
+  
+  "env" : {
+
+    "url" : "https://demoqa.com"
+}
 };

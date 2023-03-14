@@ -1,23 +1,10 @@
 class WebTables {
 
     // visit basedURL
-    visitLink() {
-        cy.visit('https://demoqa.com');
-    }
-
-    // visit elements link
-    visitElements() {
-        this.visitLink()
-        cy.get('.category-cards > :nth-child(1) > :nth-child(1)')
-            .click()
-    }
 
     webTablesLink() {
 
-        this.visitElements()
-
-        cy.get(':nth-child(1) > .element-list > .menu-list > #item-3')
-            .click()
+        cy.visit(Cypress.env("url") + "/webtables/"); 
     }
 
     // select elements

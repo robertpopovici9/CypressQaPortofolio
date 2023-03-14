@@ -2,21 +2,21 @@ import WebTables from '../../Pages/Elements/WebTables';
 
 
 
-// it('add a record',()=>{
+it('add a record',()=>{
 
-//     WebTables.webTablesLink();
+    WebTables.webTablesLink();
 
-//     WebTables.addRecord();
+    WebTables.addRecord();
    
-// })
+})
 
-// it('search after a record',()=>{
+it('search after a record',()=>{
 
-//     WebTables.webTablesLink();
+    WebTables.webTablesLink();
 
-//     WebTables.searchRecord();
+    WebTables.searchRecord();
    
-// })
+})
 
 it('search after a new record',()=>{
 

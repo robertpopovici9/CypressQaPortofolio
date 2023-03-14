@@ -7,11 +7,11 @@ describe('textBox', () => {
         //go to text box element
         TextBox.textBoxLink();
 
-        // input and assert input
-        TextBox.insertFullname()
-        TextBox.insertEmail()
-        TextBox.insertCurrentAddress()
-        TextBox.insertPermanentAddress()
+         // input and assert input
+        TextBox.insertFullname("Robert Popovici");
+        TextBox.insertEmail("robert.popovici09@yahoo.com");
+        TextBox.insertCurrentAddress("Iasi");
+        TextBox.insertPermanentAddress("Crucea");
         TextBox.clickSubmitButton();
         TextBox.checkResult();
     })

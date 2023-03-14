@@ -1,23 +1,11 @@
 class Buttons {
 
 // visit basedURL
-visitLink() {
-    cy.visit('https://demoqa.com');
-}
-
-// visit elements link
-visitElements() {
-    this.visitLink()
-    cy.get('.category-cards > :nth-child(1) > :nth-child(1)')
-        .click()
-}
 
 visitButtonsLink() {
 
-    this.visitElements()
-
-    cy.get(':nth-child(1) > .element-list > .menu-list > #item-4')
-        .click()
+    cy.visit(Cypress.env("url") + "/buttons/");
+       
 }
 
 // select elements
