@@ -1,29 +1,26 @@
 import Buttons from '../../Pages/Elements/Buttons';
 
-it('doubleClickMe', ()=>{
+
+//go to text box element
+beforeEach(() => {
 
     Buttons.visitButtonsLink();
-    
+})
+
+it('doubleClickMe', () => {
+
     Buttons.clickDoubleClickButton();
 })
 
 
+it('rightClickMe', () => {
 
-it('rightClickMe',()=>{
-
-    
-    Buttons.visitButtonsLink();
     Buttons.clickRighClickButton();
 })
 
-it('clickMe',()=>{
-
-   Buttons.visitButtonsLink()
-   
+it('clickMe', () => {
 
     Buttons.clickMe();
-    
-    
 
 })
 

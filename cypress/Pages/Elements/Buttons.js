@@ -48,11 +48,5 @@ visitButtonsLink() {
         cy.xpath('//*[@id="dynamicClickMessage"]').should('have.text', 'You have done a dynamic click');
     }
 
-
-    
-
-    
-
-
 }
 module.exports = new Buttons();

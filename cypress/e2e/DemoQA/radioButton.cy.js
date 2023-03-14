@@ -1,23 +1,24 @@
 import radioButtons from '../../Pages/Elements/radioButtons';
 
-it('radioButton Yes', () => {
+//go to text box element
+beforeEach(() => {
 
     radioButtons.radioButtonsLink();
-    radioButtons.checkYes();
-    
-
 })
 
-it('radioButton Impressive',() =>{
+it('check Yes', () => {
 
-    radioButtons.radioButtonsLink();
+    radioButtons.checkYes();
+    
+})
+
+it('check Impressive',() =>{
+
     radioButtons.checkImpressive();
 })
 
+it('check No',() =>{
 
-it('radioButton No',() =>{
-
-    radioButtons.radioButtonsLink();
     radioButtons.checkNoRadio();
 })
 

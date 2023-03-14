@@ -1,28 +1,26 @@
-import WebTables from '../../Pages/Elements/WebTables';
+import WebTables, { addDepartament, webTablesLink } from '../../Pages/Elements/WebTables';
+beforeEach(()=>{
 
+    WebTables.webTablesLink();
+})
 
 
 it('add a record',()=>{
+        
+     WebTables.addRecord("Robert", "Popovici", "robert.popovici09@yahoo.com", "27","2500", "QA");
+    
+})
 
-    WebTables.webTablesLink();
+it('search a record',()=>{
 
-    WebTables.addRecord();
+   
+    WebTables.search("alden");
    
 })
 
-it('search after a record',()=>{
+it('edit 1st record',()=>{
 
-    WebTables.webTablesLink();
-
-    WebTables.searchRecord();
-   
-})
-
-it('search after a new record',()=>{
-
-    WebTables.webTablesLink();
-
-    WebTables.addAndSearchRecord();
+    WebTables.edit("Robert");
    
 })
 

@@ -1,17 +1,23 @@
 import Links from "../../Pages/Elements/Links";
 
+//go to text box element
+beforeEach(() => {
 
+    Links.visitLinksLink();
+})
 
-    it('new tab', () => {
+// handle a new tab
+    // it('new tab', () => {
 
-        Links.visitLinksLink();
-        Links.newTabtest();
-    })
+        
+    //     Links.newTabtest();
+    // })
 
+   
     it ('api test links', ()=>{
 
-        Links.visitLinksLink();
-        Links.apiTestLinks();
+        //Links.apiTestLinks();
+        Links.noContentElement();
     })
 
 

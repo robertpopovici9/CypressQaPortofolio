@@ -10,6 +10,10 @@ module.exports = {
     "blockHosts": [ "https://5fed0c8d3282c6ebc4a8003d25dda9f4.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html?n=1 ", "https://926bd5153cc6950e4175491de00e3d27.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html?n=1"],
     "chromeWebSecurity" : true,
     "include": ["node_modules/cypress", "./cypress/**/*.js"],
+
+    // "viewportHeight": 880,
+    // "viewportWidth": 1280,
+    // "downloadsFolder": "D:\Proiect\TestareCypressGit\CypressQaPortofolio\cypress\downloads",
     
 
     
@@ -30,4 +34,6 @@ module.exports = {
 
     "url" : "https://demoqa.com"
 }
+
+
 };

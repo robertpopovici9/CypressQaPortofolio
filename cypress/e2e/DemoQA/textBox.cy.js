@@ -1,13 +1,15 @@
 import TextBox from '../../Pages/Elements/TextBox';
 describe('textBox', () => {
 
+    //go to text box element
+    beforeEach(() => {
+
+        TextBox.textBoxLink();
+    })
 
     it("Text box automation input", () => {
 
-        //go to text box element
-        TextBox.textBoxLink();
-
-         // input and assert input
+        // input elements to fields
         TextBox.insertFullname("Robert Popovici");
         TextBox.insertEmail("robert.popovici09@yahoo.com");
         TextBox.insertCurrentAddress("Iasi");

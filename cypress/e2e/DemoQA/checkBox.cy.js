@@ -1,9 +1,16 @@
 import CheckBox, { checkBoxes } from '../../Pages/Elements/CheckBox';
+
+//go to text box element
+beforeEach(() => {
+
+    CheckBox.CheckBoxLink();
+})
+
 it('checkbox', () => {
 
 
     //visit checkbox link
-    CheckBox.CheckBoxLink();
+
 
     //checking elements
 
@@ -11,13 +18,10 @@ it('checkbox', () => {
 })
 
 it('collapseAllBox', () => {
-    //visit checkbox link
-    CheckBox.CheckBoxLink();
 
     //collapse all
 
     CheckBox.collapseAll();
-
 
 })
 
