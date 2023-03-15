@@ -75,7 +75,7 @@ class WebTables {
     // add a record function
     addRecord(firstName, lastName, email, age, salary, departament) {
 
-        this.registrationForm();
+        
         this.addFirstName(firstName);
         this.addLastName(lastName);
         this.addEmail(email);

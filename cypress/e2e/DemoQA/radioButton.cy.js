@@ -6,20 +6,34 @@ beforeEach(() => {
     RadioButtons.radioButtonsLink();
 })
 
-it('check Yes', () => {
+it('check Yes radio button', () => {
 
-    RadioButtons.checkYes();
-    
+    //get the element and click
+    RadioButtons.yesRadio()
+        .click();
+    //verify the result
+    RadioButtons.yesRadioResult()
+        .should('exist');
+
 })
 
-it('check Impressive',() =>{
+it('check Impressive radio button', () => {
 
-    RadioButtons.checkImpressive();
+    //get the element and click
+    RadioButtons.impressiveRadio()
+        .click();
+
+    //verify the result
+    RadioButtons.impressiveRadioResult()
+        .should('exist');
 })
 
-it('check No',() =>{
+it('Verify if noRadio is disabled', () => {
 
-    RadioButtons.checkNoRadio();
+    //get the element 
+    RadioButtons.noRadio()
+        .should('not.be.enabled');
+
 })
 
 

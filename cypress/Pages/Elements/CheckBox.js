@@ -61,11 +61,18 @@ class CheckBox {
         .click();
     }
 
+    getOfficeBox(){
+        return cy.get('#tree-node-office');
+    }
+    getResult(){
+        return cy.get('#result');
+
+    }
     // checkbox function
     checkBoxes(){
 
         this.collapseToOffice()
-        cy.get('#tree-node-office').check({force: true});
+        
 
         // verify if selected elements are checked
         cy.xpath('//*[@id="tree-node-general"] | //*[@id="tree-node-classified"] | //*[@id="tree-node-private"] | //*[@id="tree-node-public"] | //*[@id="tree-node-documents"] | //*[@id="tree-node-home"]').should('be.checked');

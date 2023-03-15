@@ -40,6 +40,13 @@ class Links {
     notFoundElement() {
         return cy.get('#invalid-url');
     }
+    newPageElement(){
+        return cy.get('[alt="Selenium Online Training"]')
+
+    }
+    linkResponse(){
+        return cy.get('#linkResponse');
+    }
 
     newTabtest() {
         this.homeElement()

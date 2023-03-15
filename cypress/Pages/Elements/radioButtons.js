@@ -1,8 +1,5 @@
 class RadioButtons  {
 
-
-    
-
     radioButtonsLink() {
 
         cy.visit(Cypress.env("url") + "/radio-button/");
@@ -16,12 +13,16 @@ class RadioButtons  {
        
        
     }
+    yesRadioResult(){
+        return cy.xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[2]/p/span');
+        }
 
     impressiveRadio() {
         return  cy.xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[3]/label');
         
-        //
-
+    }
+    impressiveRadioResult(){
+        return cy.xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[2]/p/span');
     }
 
     noRadio() {
@@ -29,25 +30,6 @@ class RadioButtons  {
         return  cy.xpath('//*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[4]/label');
 
     }
-
-    // check radio buttons
-    checkYes() {
-
-        this.yesRadio()
-            //.should('have.class', 'custom-control-input')
-            .click();
-    }
-
-    checkImpressive() {
-        this.impressiveRadio()
-            
-            .click();
-    }
-
-    checkNoRadio() {
-        this.noRadio()
-        .should('not.be.enabled');
-    }
-
+    
 }
 module.exports = new RadioButtons();

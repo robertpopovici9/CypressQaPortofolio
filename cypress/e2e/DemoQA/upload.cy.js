@@ -1,23 +1,31 @@
 import Upload from "../../Pages/Elements/Upload";
 
-beforeEach(()=>{
+beforeEach(() => {
 
     cy.visit(Cypress.env("url") + "/upload-download/");
 
 })
 
 it('Test file upload with file ', () => {
+
+    //get the element and upload a file
+    Upload.uploadElement()
+        
+    //verify if the result
+    cy.get('#uploadedFilePath').should('contain', 'someFiles.txt')
+})
+
+it('download file in mentioned dir', () => {
     
-    //upload file and verify result
-    Upload.uploadElement();
- })
+    //download the file
 
- it('download file in mentioned dir', () => {
-    //download file and verify path /cypress/downloads
-  
-    Upload.downloadButton();
+    Upload.downloadButton()
+        
+    
+    //verify if the downloaded file exist in the correct path
+    cy.readFile('cypress/downloads/sampleFile.jpeg').should('exist');
 
-  })
+})
 
- 
+
 

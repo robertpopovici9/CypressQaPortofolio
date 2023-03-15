@@ -15,8 +15,7 @@ visitButtonsLink() {
         return cy.xpath('//*[@id="doubleClickBtn"]');
         
     }
-
-    getClickMe() {
+    getDinamicClick() {
         
         //return cy.findByText('Click Me');
         return cy.xpath('/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/button');
@@ -25,28 +24,21 @@ visitButtonsLink() {
     getRighClick(){
         return cy.xpath('//*[@id="rightClickBtn"]');
     }
-
-    //click double click button
-
-    clickDoubleClickButton(){
-
-        this.getDoubleClick()
-        .dblclick();
-        cy.xpath('//*[@id="doubleClickMessage"]').should('have.text','You have done a double click');
+    
+    // get result message
+    
+    getDoubleClickResult(){
+        return cy.get('#doubleClickMessage');
     }
 
-    clickRighClickButton(){
-        this.getRighClick()
-        .rightclick();
-        cy.xpath('//*[@id="rightClickMessage"]').should('have.text', 'You have done a right click');
+    getRighClickResult(){
+        return cy.get('#rightClickMessage');
     }
 
-    clickMe(){
-
-        this.getClickMe()
-        .click();
-        cy.xpath('//*[@id="dynamicClickMessage"]').should('have.text', 'You have done a dynamic click');
+    getDinamicClickResult(){
+        return cy.get('#dynamicClickMessage');
     }
+
 
 }
 module.exports = new Buttons();

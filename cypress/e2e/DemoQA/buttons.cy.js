@@ -7,20 +7,42 @@ beforeEach(() => {
     Buttons.visitButtonsLink();
 })
 
-it('doubleClickMe', () => {
+it('Verify double click button', () => {
 
-    Buttons.clickDoubleClickButton();
+    //get double click button 
+    Buttons.getDoubleClick()
+
+        .dblclick();
+
+    //verify if the text result is correct
+    Buttons.getDoubleClickResult().should('have.text', 'You have done a double click');
+
 })
 
 
-it('rightClickMe', () => {
+it('Verify right Click button', () => {
 
-    Buttons.clickRighClickButton();
+    //get right click button 
+    Buttons.getRighClick()
+
+        .rightclick();
+
+    //verify if the text result is correct
+    Buttons.getRighClickResult()
+        .should('have.text', 'You have done a right click');
 })
 
-it('clickMe', () => {
+it('Verify dinamy Click button', () => {
 
-    Buttons.clickMe();
+    //get click me button
+    Buttons.getDinamicClick()
+
+        .click()
+
+    //verify if the text result is correct
+
+    Buttons.getDinamicClickResult()
+        .should('have.text', 'You have done a dynamic click');
 
 })
 

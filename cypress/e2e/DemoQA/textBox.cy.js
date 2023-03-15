@@ -9,12 +9,14 @@ describe('textBox', () => {
 
     it("Text box automation input", () => {
 
-        // input elements to fields
+        // complete the forum with data
         TextBox.insertFullname("Robert Popovici");
         TextBox.insertEmail("robert.popovici09@yahoo.com");
         TextBox.insertCurrentAddress("Iasi");
         TextBox.insertPermanentAddress("Crucea");
         TextBox.clickSubmitButton();
+
+        //check
         TextBox.checkResult();
     })
 })

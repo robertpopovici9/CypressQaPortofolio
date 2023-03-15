@@ -6,16 +6,25 @@ beforeEach(() => {
     CheckBox.CheckBoxLink();
 })
 
-it('checkbox', () => {
+it('Collapse and check "Office"', () => {
 
     //checking elements
 
-    CheckBox.checkBoxes();
+    CheckBox.collapseToOffice();
+
+    // check Office box
+    CheckBox.getOfficeBox()
+    .check({force: true});
+
+    //verify the result
+    CheckBox.getResult()
+    .should('be.visible').and('have.class', 'display-result mt-4').and('be.visible');
+
 })
 
 it('collapseAllBox', () => {
 
-    //collapse all
+    //collapse all call function
 
     CheckBox.collapseAll();
 

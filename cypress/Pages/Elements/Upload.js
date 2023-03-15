@@ -9,21 +9,14 @@ class Upload {
 
     //getting elements
 
-    getUploadElement() {
-        return cy.get('#uploadFile');
-    }
-
     uploadElement() {
-        this.getUploadElement()
-            .attachFile('someFiles.txt');
-        cy.get('#uploadedFilePath').should('contain', 'someFiles.txt')
+        cy.get('#uploadFile').attachFile('someFiles.txt');
 
     }
 
     downloadButton() {
         
-        cy.get('#downloadButton').should('contain', 'Download').click()
-        cy.readFile('cypress/downloads/sampleFile.jpeg').should('exist');
+        cy.get('#downloadButton').should('contain', 'Download').click();
     }
 
 
