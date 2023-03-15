@@ -37,7 +37,7 @@ it('Verify dinamy Click button', () => {
     //get click me button
     Buttons.getDinamicClick()
 
-        .click()
+        .click();
 
     //verify if the text result is correct
 

@@ -18,7 +18,9 @@ it('Collapse and check "Office"', () => {
 
     //verify the result
     CheckBox.getResult()
-    .should('be.visible').and('have.class', 'display-result mt-4').and('be.visible');
+    .should('be.visible')
+    .and('have.class', 'display-result mt-4')
+    .and('be.visible');
 
 })
 

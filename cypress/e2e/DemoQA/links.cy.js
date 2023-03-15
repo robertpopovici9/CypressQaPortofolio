@@ -22,9 +22,10 @@ it('new tab', () => {
 
 it('api test links', () => {
 
-    //Links.apiTestLinks();
+    //select element
     Links.createdElement()
     .click();
+    //verify result message
     Links.linkResponse()
     .should('exist');
 
