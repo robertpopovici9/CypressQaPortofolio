@@ -6,11 +6,11 @@ beforeEach(()=>{
 
 })
 
-// it('Test file upload with file ', () => {
+it('Test file upload with file ', () => {
     
-//     //upload file and verify result
-//     Upload.uploadElement();
-//  })
+    //upload file and verify result
+    Upload.uploadElement();
+ })
 
  it('download file in mentioned dir', () => {
     //download file and verify path /cypress/downloads
