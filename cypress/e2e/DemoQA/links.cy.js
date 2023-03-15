@@ -7,11 +7,11 @@ beforeEach(() => {
 })
 
 // handle a new tab
-    // it('new tab', () => {
+    it('new tab', () => {
 
         
-    //     Links.newTabtest();
-    // })
+        Links.newTabtest();
+    })
 
    
     it ('api test links', ()=>{

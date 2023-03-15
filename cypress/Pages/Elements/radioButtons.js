@@ -1,4 +1,4 @@
-class radioButtons  {
+class RadioButtons  {
 
 
     
@@ -50,4 +50,4 @@ class radioButtons  {
     }
 
 }
-module.exports = new radioButtons();
+module.exports = new RadioButtons();

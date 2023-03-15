@@ -1,25 +1,25 @@
-import radioButtons from '../../Pages/Elements/radioButtons';
+import RadioButtons from '../../Pages/Elements/RadioButtons';
 
 //go to text box element
 beforeEach(() => {
 
-    radioButtons.radioButtonsLink();
+    RadioButtons.radioButtonsLink();
 })
 
 it('check Yes', () => {
 
-    radioButtons.checkYes();
+    RadioButtons.checkYes();
     
 })
 
 it('check Impressive',() =>{
 
-    radioButtons.checkImpressive();
+    RadioButtons.checkImpressive();
 })
 
 it('check No',() =>{
 
-    radioButtons.checkNoRadio();
+    RadioButtons.checkNoRadio();
 })
 
 

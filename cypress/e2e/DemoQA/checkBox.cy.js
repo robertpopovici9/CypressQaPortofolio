@@ -8,10 +8,6 @@ beforeEach(() => {
 
 it('checkbox', () => {
 
-
-    //visit checkbox link
-
-
     //checking elements
 
     CheckBox.checkBoxes();

@@ -23,7 +23,7 @@ class Upload {
     downloadButton() {
         
         cy.get('#downloadButton').should('contain', 'Download').click()
-        cy.readFile('D:/Proiect/TestareCypressGit/CypressQaPortofolio/cypress/downloads/sampleFile.jpeg').should('exist');
+        cy.readFile('cypress/downloads/sampleFile.jpeg').should('exist');
     }
 
 
