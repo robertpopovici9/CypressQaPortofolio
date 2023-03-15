@@ -50,34 +50,34 @@ class Links {
 
     apiTestLinks(){
 
-        // this.createdElement()
-        // .click()
-        // cy.get('#linkResponse').invoke('text').should('equal', 'Link has responded with staus 200 and status text OK');
+        this.createdElement()
+        .click()
+        cy.get('#linkResponse').invoke('text').should('equal', 'Link has responded with staus 201 and status text Created');
 
         
         
-        // cy.get('#linkResponse').contains('Link has responded with staus 204 and status text No Content').and('be.visible');
-        //cy.get('#linkResponse').invoke('text').should('equal', 'Link has responded with staus 204 and status text Noo Content');
+        cy.get('#linkResponse').contains('Link has responded with staus 204 and status text No Content').and('be.visible');
+        cy.get('#linkResponse').invoke('text').should('equal', 'Link has responded with staus 204 and status text Noo Content');
 
-        // this.movedElement()
-        // .click()
-        // cy.get('#linkResponse').contains('Link has responded with staus 301 and status text Moved Permanently').and('be.visible');
+        this.movedElement()
+        .click()
+        cy.get('#linkResponse').contains('Link has responded with staus 301 and status text Moved Permanently').and('be.visible');
 
-        // this.unauthorizedElement()
-        // .click()
-        // cy.get('#linkResponse').contains('Link has responded with staus 401 and status text Unauthorized').and('be.visible');
+        this.unauthorizedElement()
+        .click()
+        cy.get('#linkResponse').contains('Link has responded with staus 401 and status text Unauthorized').and('be.visible');
 
-        // this.badRequestElement()
-        // .click()
-        // cy.get('#linkResponse').contains('Link has responded with staus 400 and status text Bad Request').and('be.visible');
+        this.badRequestElement()
+        .click()
+        cy.get('#linkResponse').contains('Link has responded with staus 400 and status text Bad Request').and('be.visible');
 
-        // this.forbiddenElement()
-        // .click()
-        // cy.get('#linkResponse').contains('Link has responded with staus 403 and status text Forbidden').and('be.visible');
+        this.forbiddenElement()
+        .click()
+        cy.get('#linkResponse').contains('Link has responded with staus 403 and status text Forbidden').and('be.visible');
 
-        // this.notFoundElement()
-        // .click()
-        // cy.get('#linkResponse').contains('Link has responded with staus 404 and status text Not Found').and('be.visible');
+        this.notFoundElement()
+        .click()
+        cy.get('#linkResponse').contains('Link has responded with staus 404 and status text Not Found').and('be.visible');
     }
 
 
